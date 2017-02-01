@@ -51,6 +51,7 @@ class LoginForm extends Component {
                 <CardSection>
                     <Input
                         returnKeyType="next"
+                        keyboardType="email-address"
                         placeholder="user@gmail.com"
                         label="Email"
                         value={this.state.email}
@@ -61,7 +62,6 @@ class LoginForm extends Component {
                 <CardSection>
                     <Input
                         returnKeyType="done"
-                        keyboardType="email-address"
                         placeholder="password"
                         value={this.state.password}
                         onChangeText={password => this.setState({ password })}
